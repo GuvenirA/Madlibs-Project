@@ -3,25 +3,25 @@ import java.util.Scanner;
  * To create a madlib using the users input
  *
  * @Ashton Guvenir
- * @9/16/2022
+ * @9/19/2022
  */
 public class Madlibs
 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         
-        //name and date
+        //name
         System.out.print("Enter your name (First, Last): ");
         String name = input.nextLine();
+        
+        //date
         System.out.print("Enter the month(mm): ");
         int month = input.nextInt();
-        input.nextLine();
         System.out.print("Enter the day(dd): ");
         int day = input.nextInt();
-        input.nextLine();
         System.out.print("Enter the year(yyyy): ");
         int year = input.nextInt();
-        input.nextLine();
+        input.nextLine(); //clear buffer
         
         //the words that are going to be put in the madlib
         System.out.print("Enter a adjective: ");
